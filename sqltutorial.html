@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/w3.css" />
+    <style>
+        .side-nav {
+            width: 30%;
+        }
+
+        .test {
+            position: absolute;
+            left: 30%;
+            width: 70%;
+        }
+
+        nav {
+            height: 240px;
+            line-height: 240px;
+        }
+
+        nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+            height: 240px;
+            line-height: 240px;
+        }
+
+        nav .button-collapse i {
+            height: 240px;
+            line-height: 240px;
+        }
+
+        nav .brand-logo {
+            font-size: 4rem;
+        }
+
+        @media only screen and (min-width: 601px) {
+            nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+                height: 240px;
+                line-height: 240px;
+            }
+        }
+    </style>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(".button-collapse").sideNav();
+    </script>
+</head>
+<body>
+<header>
+    <div class="container"><a href="#" data-activates="nav-mobile"
+                              class="button-collapse top-nav waves-effect waves-light circle hide-on-large-only"><i
+            class="material-icons">menu</i></a></div>
+    <ul id="nav-mobile" class="side-nav fixed">
+        <div align="center">
+            <li class="logo"><img src="websec.png" width="120px" height="150px"></li>
+        </div>
+        <li class="bold active"><a href="about.html" class="waves-effect waves-teal">About</a></li>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Tutorials</a>
+
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="sqltutorial.html">SQL Injection</a></li>
+                            <li><a href="csstutorial.html">Cross Site Scripting</a></li>
+                            <li><a href="bsmtutorial.html">Broken Session Management</a></li>
+                            <li><a href="idortutorial.html">Insecure Direct Object References</a></li>
+                            <li><a href="uraftutorial.html">Unvalidated Redirects And Forwards</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Challenges</a>
+
+                    <div class="collapsible-body">
+                        <ul>
+                            <li class="no-padding">
+                                <ul class="collapsible collapsible-accordion">
+                                    <li class="bold">
+                                        <a class="collapsible-header waves-effect waves-teal">SQL Injection</a>
+
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li><a href="sqlchallenge1.php" class="teal-text">Challenge 1</a></li>
+                                                <li><a href="sqlchallenge2.php" class="teal-text">Challenge 2</a></li>
+                                                <li><a href="sqlchallenge3.php" class="teal-text">Challenge 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="no-padding">
+                                <ul class="collapsible collapsible-accordion">
+                                    <li class="bold">
+                                        <a class="collapsible-header waves-effect waves-teal">Cross Site Scripting</a>
+
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li><a href="csschallenge1.php" class="teal-text">Challenge 1</a></li>
+                                                <li><a href="csschallenge2.php" class="teal-text">Challenge 2</a></li>
+                                                <li><a href="csschallenge3.php" class="teal-text">Challenge 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="no-padding">
+                                <ul class="collapsible collapsible-accordion">
+                                    <li class="bold">
+                                        <a class="collapsible-header waves-effect waves-teal">Broken Session
+                                            Management</a>
+
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li><a href="bsmchallenge1.php" class="teal-text">Challenge 1</a></li>
+                                                <li><a href="bsmchallenge2.php" class="teal-text">Challenge 2</a></li>
+                                                <li><a href="bsmchallenge3.php" class="teal-text">Challenge 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="no-padding">
+                                <ul class="collapsible collapsible-accordion">
+                                    <li class="bold">
+                                        <a class="collapsible-header waves-effect waves-teal">Insecure Direct Object
+                                            References</a>
+
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li><a href="idorchallenge1.php" class="teal-text">Challenge 1</a></li>
+                                                <li><a href="idorchallenge2.php" class="teal-text">Challenge 2</a></li>
+                                                <li><a href="idorchallenge3.php" class="teal-text">Challenge 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="no-padding">
+                                <ul class="collapsible collapsible-accordion">
+                                    <li class="bold">
+                                        <a class="collapsible-header waves-effect waves-teal">Unvalidated Redirects And
+                                            Forwards</a>
+
+                                        <div class="collapsible-body">
+                                            <ul>
+                                                <li><a href="urfchallenge1.php" class="teal-text">Challenge 1</a></li>
+                                                <li><a href="urfchallenge2.php" class="teal-text">Challenge 2</a></li>
+                                                <li><a href="urfchallenge3.php" class="teal-text">Challenge 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</header>
+<div class="test">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">SQL Injection</a>
+        </div>
+    </nav>
+    <br>
+    <div style="position: absolute; left: 5%; width: 90%">
+        <h2>SQL in Web Pages</h2>
+        <p>In the previous chapters, you have learned to retrieve (and update) database data, using SQL.</p>
+        <p>When SQL is used to display data on a web page, it is common to let web users input their own search values.</p>
+        <p>Since SQL statements are text only, it is easy, with a little piece of 
+        computer code, to dynamically change SQL statements to provide the user with selected data:</p>
+        <div class="w3-example">
+        <h3>Server Code</h3>
+        <div class="w3-code notranslate">
+            txtUserId = getRequestString(&quot;UserId&quot;);<br>txtSQL = &quot;SELECT *
+        FROM Users WHERE UserId = &quot; + txtUserId;</div>
+        </div>
+        <p>The example above, creates a select statement by adding a variable 
+        (txtUserId) to a select string. The variable is fetched from the user input 
+        (Request) to the page.</p>
+        <p>The rest of this chapter describes the potential dangers of using user input in SQL statements.</p>
+        <hr>
+
+        <h2>SQL Injection</h2>
+        <p>SQL injection is a technique where malicious users can inject SQL commands into an SQL statement, via web page input.</p>
+        <p>Injected SQL commands can alter SQL statement and compromise the security of a web application.</p>
+        <hr>
+
+        <h2>SQL Injection Based on 1=1 is Always True</h2>
+        <p>Look at the example above, one more time.</p>
+        <p>Let's say that the original purpose of the code was to create an SQL statement to select a 
+        user with a given user id.</p>
+        <p>If there is nothing to prevent a user from entering &quot;wrong&quot; input, the user 
+        can enter some &quot;smart&quot; input like this:</p>
+        <p>UserId: <br>
+        <input type="text" name="UserId" value="105 or 1=1"></p>
+        <div class="w3-example">
+        <h3>Server Result</h3>
+        <div class="w3-code notranslate">
+        SELECT * FROM Users WHERE UserId = 105 or 1=1</div>
+        </div>
+
+        <p>The SQL above is valid. It will return all rows from the table Users, since <strong>WHERE 1=1</strong> is always true.</p>
+        <p>Does the example above seem dangerous? What if the Users table contains names and passwords?</p>
+        <p>The SQL statement above is much the same as this:</p>
+        <div class="w3-example">
+        <div class="w3-code notranslate">
+        SELECT UserId, Name, Password
+        FROM Users WHERE UserId = 105 or 1=1</div>
+        </div>
+        <p>A smart hacker might get access to all the user names and passwords in a database by simply inserting 
+        105 or 1=1 into the input box.</p>
+        <hr>
+
+        <h2>SQL Injection Based on&nbsp;&quot;&quot;=&quot;&quot; is Always True</h2>
+        <p>Here is a common construction, used to verify user login to a web site:</p>
+        <p>User Name:<br>
+        <input type="text" name="uName" value=""></p>
+        <p>Password:<br>
+        <input type="text" name="uPass" value=""></p>
+        <div class="w3-example">
+        <h3>Server Code</h3>
+        <div class="w3-code notranslate">
+        uName = getRequestString(&quot;UserName&quot;);<br>uPass = getRequestString(&quot;UserPass&quot;);<br>
+        <br>sql = &quot;SELECT * FROM Users WHERE Name ='&quot; + uName + &quot;' AND Pass ='&quot; + uPass + &quot;'&quot;</div>
+        </div>
+        <p>
+        A smart hacker might get access to user names and passwords&nbsp;in a database by simply inserting 
+        &quot; or &quot;&quot;=&quot; into the user name or password text box.</p>
+        <p>The code at the server will create a valid SQL statement like this:</p>
+        <div class="w3-example">
+        <h3>Result</h3>
+        <div class="w3-code notranslate">
+        SELECT * FROM Users WHERE Name =&quot;&quot; or &quot;&quot;=&quot;&quot; AND Pass =&quot;&quot; or &quot;&quot;=&quot;&quot;</div>
+        </div>
+        <p>The result SQL is valid. It will return all rows from the table Users, 
+        since <strong>WHERE &quot;&quot;=&quot;&quot;</strong> is always true.</p>
+        <hr>
+
+        <h2>SQL Injection Based on Batched SQL Statements&nbsp;</h2>
+        <p>Most databases support batched SQL statement, separated by semicolon.</p>
+        <div class="w3-example">
+        <h3>Example</h3>
+        <div class="w3-code notranslate">
+        SELECT * FROM Users; DROP TABLE Suppliers
+        </div>
+        </div>
+        <p>The SQL above will return all rows in the Users table, and then delete the table called Suppliers.</p>
+        <p>If we had the following server code: </p>
+        <div class="w3-example">
+        <h3>Server Code</h3>
+        <div class="w3-code notranslate">
+        txtUserId = getRequestString(&quot;UserId&quot;);<br>txtSQL = &quot;SELECT *
+        FROM Users WHERE UserId = &quot; + txtUserId;</div>
+        </div>
+
+        <p>And the following input:</p>
+        <p>User id:<br>
+        <input type="text" style="width:500px"name="UserId" value="105; DROP TABLE Suppliers"></p>
+        <p>The code at the server would create a valid SQL statement like this:</p>
+        <div class="w3-example">
+        <h3>Result</h3>
+        <div class="w3-code notranslate">
+        SELECT * FROM Users WHERE 
+        UserId = 105; DROP TABLE Suppliers</div>
+        </div>
+        <hr>
+    </div>
+</div>
+</body>
+</html>
